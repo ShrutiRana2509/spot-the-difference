@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Difference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="gameTitle">Spot the Difference</h1>
+        <center> 
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img id="image1" src="a.png" alt="Image 1">
+            </div>
+            <div class="image-wrapper">
+                <img id="image2" src="b.png" alt="Image 2">
+                <div id="differenceOverlay"></div> <!-- Overlay for highlighting differences -->
+            </div>
+        </div>
+        <p id="message"></p> <!-- Feedback for the player -->
+        <div id="timer">Time: <span id="time">0</span> seconds</div>
+    </div></center>
+
+    <script src="script.js"></script>
+</body>
+</html>

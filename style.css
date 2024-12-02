@@ -1,0 +1,125 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #f4f4f4; /* Light text for contrast */
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1e1e1e; /* Slightly lighter background for contrast */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Modern shadow */
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #f4f4f4;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+}
+
+/* Highlight Styles */
+.highlight {
+  position: absolute;
+    border: 2px solid green; /* Green border to indicate the difference */
+    background-color: rgba(0, 255, 0, 0.4); /* Semi-transparent green fill */
+    pointer-events: none; /* Prevent interaction with the highlight */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+
+/* Difference Overlay */
+.difference {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    transition: all 0.3s ease; /* Smooth transition for feedback */
+}
+
+.difference.correct {
+    background-color: rgba(76, 175, 80, 0.4);
+    border: 2px solid #4caf50;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Equal space between images */
+    width: 90%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    position: relative;
+    border-radius: 8px; /* Rounded corners for modern look */
+    overflow: hidden; /* Ensures rounded corners for images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: none; /* Remove border */
+}
+
+/* Difference Overlay */
+#differenceOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Messages and Timer */
+#message, #timer {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #f4f4f4;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .game-container {
+        padding: 15px;
+    }
+}
