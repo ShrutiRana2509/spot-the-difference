@@ -7,3 +7,7 @@
 •	The JSON File Provide The Dynamic Data Such As Game Image Path,And The Coordinates Of The Difference.
 •	The Game Uses Fetch API To Retrieve Content From JSON File.
 •	JSON File Provide The Structured Way To Configure The Game Title, Load Images, And Define The Interactive Areas (Coordinates).
+
+
+**Game Link:**
+https://spotthedifference1.netlify.app/
